@@ -2,11 +2,12 @@ import express from "express";
 import dotenv from "dotenv"
 import cookieParser from "cookie-parser" 
 
-import { connectDb } from "./Lib/lib.js";
+
 
 
 import authRoutes from "./routes/auth.route.js"
 import messageRoutes from "./routes/message.route.js"
+import { connectDb } from "./Lib/lib.js";
 
 dotenv.config()
 const app = express();
